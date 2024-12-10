@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO - Yefrianda Rayhan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <meta name="description" content="Portfolio of Yefrianda Rayhan, showcasing skills, education, and services.">
+    <meta name="author" content="Yefrianda Rayhan">
+    <meta name="keywords" content="Portfolio, Web Developer, Yefrianda Rayhan">
+</head>
+
+<body class="font-sans bg-gray-100 text-gray-800">
+
+    <header class="flex justify-between items-center px-6 py-4 bg-gray-900 text-white fixed top-0 w-full z-50">
+        <!-- Logo dan Nama -->
+        <a href="#home" class="flex items-center text-xl font-bold">
+            <img src="./Picture/Logo.jpg" alt="Logo" class="w-10 h-10 mr-2 rounded-full">
+            Yefrianda <span class="text-teal-400 ml-1">Rayhan</span>
+        </a>
+        
+    
+        <!-- Hamburger Menu Ikon -->
+        <i class="bx bx-menu-alt-right text-3xl cursor-pointer md:hidden" id="hamburger"></i>
+    
+        <!-- Navigasi Menu untuk Desktop -->
+        <nav class="hidden md:flex space-x-4">
+            <a href="#home" class="hover:text-teal-400">Home</a>
+            <a href="#education" class="hover:text-teal-400">Education</a>
+            <a href="#services" class="hover:text-teal-400">Services</a>
+            <a href="#contact" class="hover:text-teal-400">Contact</a>
+        </nav>
+    </header>    
+
+    <!-- Navigasi Mobile Menu dengan Tombol Close -->
+    <div class="fixed inset-0 bg-gray-900 bg-opacity-95 z-50 transform -translate-x-full transition-transform md:hidden"
+        id="mobileMenu">
+        <!-- Tombol Close -->
+        <div class="absolute top-4 right-4 text-white text-3xl cursor-pointer" id="closeMenu">
+            &times;
+        </div>
+
+        <!-- Menu Navigasi Centered -->
+        <nav class="flex flex-col items-center justify-center h-screen space-y-6 text-white text-lg md:hidden">
+            <a href="#home" class="hover:text-teal-400" onclick="toggleMobileMenu()">Home</a>
+            <a href="#education" class="hover:text-teal-400" onclick="toggleMobileMenu()">Education</a>
+            <a href="#services" class="hover:text-teal-400" onclick="toggleMobileMenu()">Services</a>
+            <a href="#contact" class="hover:text-teal-400" onclick="toggleMobileMenu()">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Section Home -->
+    <section class="home bg-gray-900 text-white py-20 pt-32" id="home">
+        <div
+            class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center px-6 space-y-6 md:space-y-0">
+            <div class="home-content md:w-1/2 text-center md:text-left mt-6">
+                <h1 class="text-4xl font-bold">welcome to my <span class="text-teal-400">personal website</span></h1>
+                <h3 class="text-2xl mt-4">I'm a <span class="text-teal-400" id="typewriter"></span></h3>
+                
+                <p class="mt-4 text-gray-300">
+                    *Passionate about creating beautiful and functional websites. Let's collaborate and bring your ideas
+                    to life!*
+                </p>
+
+                <div class="flex justify-center md:justify-start space-x-4 mt-6">
+                    <!-- <a href="#"
+                        class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a> -->
+                    <a href="https://www.instagram.com/yefrianda_/profilecard/?igsh=MW8xdGI3YWpxNHFvdA=="
+                        class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@terompajopang?is_from_webapp=1&sender_device=pc"
+                        class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
+                         <i class='bx bxl-tiktok'></i>
+                    </a>
+                    <a href="https://github.com/yefrianda"
+                        class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+
+                <div class="mt-6 space-x-4 flex justify-center md:justify-start">
+                    <a href="#education"
+                        class="px-4 py-2 bg-teal-500 text-white rounded hover:bg-teal-600 transform hover:-translate-y-2 transition-all duration-200">Hire</a>
+                    <a href="#contact"
+                        class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transform hover:-translate-y-2 transition-all duration-200">Contact</a>
+                </div>
+            </div>
+
+            <div class="home-img md:w-1/2 flex justify-center">
+                <img src="./Picture/UIR.jpeg" alt="Profile Picture"
+                    class="rounded-full w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 object-cover shadow-lg transition duration-300 ease-in-out hover:shadow-2xl hover:scale-110 hover:ring-4 hover:ring-teal-500 hover:backdrop-blur-lg">
+            </div>            
+            
+        </div>
+    </section>
+
+
+    <!-- Section Education -->
+    <section class="education bg-white py-20" id="education">
+        <h2 class="text-center text-3xl font-bold mb-12">Education</h2>
+
+        <div class="container mx-auto px-6">
+            <div class="space-y-12 relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-6 top-0 h-full w-1 bg-teal-500"></div>
+
+                <!-- Timeline Item -->
+                <div class="flex items-start space-x-6 group">
+                    <div class="relative z-10">
+                        <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2017
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 p-6 rounded-lg shadow-lg flex-1 transform group-hover:-translate-y-2 transition duration-300">
+                        <h3 class="font-bold text-xl mb-2">SMKN 2 Teluk Kuantan</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item -->
+                <div class="flex items-start space-x-6 group">
+                    <div class="relative z-10">
+                        <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2020
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 p-6 rounded-lg shadow-lg flex-1 transform group-hover:-translate-y-2 transition duration-300">
+                        <h3 class="font-bold text-xl mb-2">Islamic University of Riau</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item -->
+                <div class="flex items-start space-x-6 group">
+                    <div class="relative z-10">
+                        <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2024
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-50 p-6 rounded-lg shadow-lg flex-1 transform group-hover:-translate-y-2 transition duration-300">
+                        <h3 class="font-bold text-xl mb-2">Freelancer</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="services bg-gray-100 py-20" id="services">
+        <h2 class="text-center text-3xl font-bold mb-8">Services</h2>
+
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+            <div
+                class="p-6 bg-white shadow-lg rounded-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+                <h4 class="text-xl font-bold mb-2">UI Design</h4>
+                <p class="text-gray-600">Creating visually appealing user interfaces.</p>
+            </div>
+
+            <div
+                class="p-6 bg-white shadow-lg rounded-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+                <h4 class="text-xl font-bold mb-2">Frontend Development</h4>
+                <p class="text-gray-600">Building responsive and interactive frontends.</p>
+            </div>
+
+            <div
+                class="p-6 bg-white shadow-lg rounded-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+                <h4 class="text-xl font-bold mb-2">Backend Development</h4>
+                <p class="text-gray-600">Developing robust server-side applications.</p>
+            </div>
+
+            <div
+                class="p-6 bg-white shadow-lg rounded-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+                <h4 class="text-xl font-bold mb-2">Testing</h4>
+                <p class="text-gray-600">Ensuring quality and performance of systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact bg-gray-900 text-white py-20" id="contact">
+        <h2 class="text-center text-3xl font-bold mb-8">Contact <span class="text-teal-400">Me</span></h2>
+
+        <form action="" class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Full Name" class="w-full p-3 rounded bg-gray-800 text-white">
+                <input type="email" placeholder="Email" class="w-full p-3 rounded bg-gray-800 text-white">
+                <input type="number" placeholder="Phone Number" class="w-full p-3 rounded bg-gray-800 text-white">
+                <input type="text" placeholder="Subject" class="w-full p-3 rounded bg-gray-800 text-white">
+            </div>
+
+            <textarea placeholder="Your Message" class="w-full mt-6 p-3 rounded bg-gray-800 text-white"
+                rows="5"></textarea>
+            <input type="submit" value="Send Message"
+                class="mt-6 px-4 py-2 bg-teal-500 text-white rounded hover:bg-teal-600">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center space-y-4">
+            <div class="flex justify-center space-x-4">
+                <!-- <a href="#" class="text-teal-400 text-2xl"><i class='bx bxl-whatsapp'></i></a> -->
+                <a href="https://www.instagram.com/yefrianda_/profilecard/?igsh=MW8xdGI3YWpxNHFvdA==" class="text-teal-400 text-2xl"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.tiktok.com/@terompajopang?is_from_webapp=1&sender_device=pc" class="text-teal-400 text-2xl"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://github.com/yefrianda" class="text-teal-400 text-2xl"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <ul class="flex justify-center space-x-4 text-gray-300">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <p class="text-gray-500">&copy; Yefrianda Rayhan | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="index.js">
+
+    </script>
+
+</body>
+
+</html>
