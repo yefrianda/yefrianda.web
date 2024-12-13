@@ -34,7 +34,8 @@
         <nav class="hidden md:flex space-x-4">
             <a href="#home" class="hover:text-teal-400">Home</a>
             <a href="#education" class="hover:text-teal-400">Education</a>
-            <a href="#services" class="hover:text-teal-400">Services</a>
+            <a href="#techstack" class="hover:text-teal-400">TechStack</a>
+            <a href="#picture" class="hover:text-teal-400">Picture</a>
             <a href="#contact" class="hover:text-teal-400">Contact</a>
         </nav>
     </header>    
@@ -51,7 +52,8 @@
         <nav class="flex flex-col items-center justify-center h-screen space-y-6 text-white text-lg md:hidden">
             <a href="#home" class="hover:text-teal-400" onclick="toggleMobileMenu()">Home</a>
             <a href="#education" class="hover:text-teal-400" onclick="toggleMobileMenu()">Education</a>
-            <a href="#services" class="hover:text-teal-400" onclick="toggleMobileMenu()">Services</a>
+            <a href="#techstack" class="hover:text-teal-400" onclick="toggleMobileMenu()">TechStack</a>
+            <a href="#picture" class="hover:text-teal-400" onclick="toggleMobileMenu()">Picture</a>
             <a href="#contact" class="hover:text-teal-400" onclick="toggleMobileMenu()">Contact</a>
         </nav>
     </div>
@@ -74,6 +76,10 @@
                         class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
                         <i class='bx bxl-whatsapp'></i>
                     </a> -->
+                    <a href="https://github.com/yefrianda"
+                        class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
+                        <i class='bx bxl-github'></i>
+                    </a>
                     <a href="https://www.instagram.com/yefrianda_/profilecard/?igsh=MW8xdGI3YWpxNHFvdA=="
                         class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
                         <i class='bx bxl-instagram'></i>
@@ -82,12 +88,7 @@
                         class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
                          <i class='bx bxl-tiktok'></i>
                     </a>
-                    <a href="https://github.com/yefrianda"
-                        class="text-teal-400 text-2xl transform hover:-translate-y-2 transition-all duration-200">
-                        <i class='bx bxl-github'></i>
-                    </a>
                 </div>
-
 
                 <div class="mt-6 space-x-4 flex justify-center md:justify-start">
                     <a href="#education"
@@ -104,7 +105,6 @@
             
         </div>
     </section>
-
 
     <!-- Section Education -->
     <section class="education bg-white py-20" id="education">
@@ -124,7 +124,10 @@
                     <div
                         class="bg-gray-50 p-6 rounded-lg shadow-lg flex-1 transform group-hover:-translate-y-2 transition duration-300">
                         <h3 class="font-bold text-xl mb-2">SMKN 2 Teluk Kuantan</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="text-gray-600">
+                            <strong>Temporary story</strong><br>
+                            Computer and Network Engineering
+                        </p>
                     </div>
                 </div>
 
@@ -137,7 +140,12 @@
                     <div
                         class="bg-gray-50 p-6 rounded-lg shadow-lg flex-1 transform group-hover:-translate-y-2 transition duration-300">
                         <h3 class="font-bold text-xl mb-2">Islamic University of Riau</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="text-gray-600">
+                            <p class="text-gray-600">
+                                <strong>Find your calling</strong><br>
+                                Informatics Engineering
+                            </p>
+                        </p>
                     </div>
                 </div>
 
@@ -150,44 +158,101 @@
                     <div
                         class="bg-gray-50 p-6 rounded-lg shadow-lg flex-1 transform group-hover:-translate-y-2 transition duration-300">
                         <h3 class="font-bold text-xl mb-2">Freelancer</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="text-gray-600">
+                            <p class="text-gray-600">
+                                <strong>Sadistic current</strong><br>
+                                Need job vacancy information
+                            </p>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Services -->
-    <section class="services bg-gray-100 py-20" id="services">
-        <h2 class="text-center text-3xl font-bold mb-8">Services</h2>
-
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
-            <div
-                class="p-6 bg-white shadow-lg rounded-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-300">
-                <h4 class="text-xl font-bold mb-2">UI Design</h4>
-                <p class="text-gray-600">Creating visually appealing user interfaces.</p>
-            </div>
-
-            <div
-                class="p-6 bg-white shadow-lg rounded-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-300">
-                <h4 class="text-xl font-bold mb-2">Frontend Development</h4>
-                <p class="text-gray-600">Building responsive and interactive frontends.</p>
-            </div>
-
-            <div
-                class="p-6 bg-white shadow-lg rounded-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-300">
-                <h4 class="text-xl font-bold mb-2">Backend Development</h4>
-                <p class="text-gray-600">Developing robust server-side applications.</p>
-            </div>
-
-            <div
-                class="p-6 bg-white shadow-lg rounded-lg transform hover:-translate-y-3 hover:shadow-2xl transition duration-300">
-                <h4 class="text-xl font-bold mb-2">Testing</h4>
-                <p class="text-gray-600">Ensuring quality and performance of systems.</p>
+    <!-- Section Tech Stack -->
+    <section class="techstack bg-gray-200 py-20" id="techstack">
+        <h2 class="text-center text-3xl font-bold mb-8">Tech Stack</h2>
+    
+        <div class="container mx-auto flex justify-center items-center px-6">
+            <div 
+                class="bg-white shadow-lg rounded-lg relative w-full max-w-6xl">
+                <img 
+                    src="./Picture/TechStack.PNG" 
+                    alt="Tech Stack" 
+                    class="rounded-lg w-full h-auto object-cover">
             </div>
         </div>
     </section>
 
+    <!-- Section Picture -->
+    <section class="picture bg-white py-20" id="picture">
+        <h2 class="text-center text-3xl font-bold mb-8">Picture</h2>
+    
+        <div class="container mx-auto relative">
+            <div class="slider flex overflow-hidden gap-3 px-3" id="slider">
+                <!-- Slide 1 -->
+                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./Picture/IMG-Prim1.jpeg" alt="Photo 1" class="w-full h-60 object-cover">
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">Photo 1</h4>
+                            <p class="text-gray-600">This is a description for photo 1.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./Picture/IMG-Prim1.jpeg" alt="Photo 2" class="w-full h-60 object-cover">
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">Photo 2</h4>
+                            <p class="text-gray-600">This is a description for photo 2.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./Picture/IMG-Prim1.jpeg" alt="Photo 3" class="w-full h-60 object-cover">
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">Photo 3</h4>
+                            <p class="text-gray-600">This is a description for photo 3.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 4 -->
+                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./Picture/IMG-Prim1.jpeg" alt="Photo 4" class="w-full h-60 object-cover">
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">Photo 4</h4>
+                            <p class="text-gray-600">This is a description for photo 4.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./Picture/IMG-Prim1.jpeg" alt="Photo 5" class="w-full h-60 object-cover">
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">Photo 5</h4>
+                            <p class="text-gray-600">This is a description for photo 5.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Navigation buttons -->
+            <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md hover:bg-gray-900">&#8592;</button>
+            <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md hover:bg-gray-900">&#8594;</button>
+        </div>
+    </section>
+    
     <!-- Section Contact -->
     <section class="contact bg-gray-900 text-white py-20" id="contact">
         <h2 class="text-center text-3xl font-bold mb-8">Contact <span class="text-teal-400">Me</span></h2>
@@ -212,9 +277,9 @@
         <div class="container mx-auto text-center space-y-4">
             <div class="flex justify-center space-x-4">
                 <!-- <a href="#" class="text-teal-400 text-2xl"><i class='bx bxl-whatsapp'></i></a> -->
-                <a href="https://www.instagram.com/yefrianda_/profilecard/?igsh=MW8xdGI3YWpxNHFvdA==" class="text-teal-400 text-2xl"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.tiktok.com/@terompajopang?is_from_webapp=1&sender_device=pc" class="text-teal-400 text-2xl"><i class='bx bxl-tiktok'></i></a>
                 <a href="https://github.com/yefrianda" class="text-teal-400 text-2xl"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/yefrianda_/profilecard/?igsh=MW8xdGI3YWpxNHFvdA==" class="text-teal-400 text-2xl"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.tiktok.com/@terompajopang?_t=8s6e6ABZYAy&_r=1" class="text-teal-400 text-2xl"><i class='bx bxl-tiktok'></i></a>
             </div>
 
             <ul class="flex justify-center space-x-4 text-gray-300">

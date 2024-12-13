@@ -62,3 +62,18 @@ hamburgerIcon.addEventListener("click", toggleMobileMenu);
 
 // Aktifkan tombol close (X) untuk menutup menu
 closeMenu.addEventListener("click", toggleMobileMenu);
+
+// Section Picture
+const slider = document.getElementById('slider');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+    
+let scrollAmount = 0;
+    
+prevButton.addEventListener('click', () => {
+    slider.scrollBy({ left: -slider.clientWidth, behavior: 'smooth' });
+});
+    
+nextButton.addEventListener('click', () => {
+    slider.scrollBy({ left: slider.clientWidth, behavior: 'smooth' });
+});
