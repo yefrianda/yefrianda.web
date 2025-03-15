@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const words = ["Freelancer", "Designer", "Web Developer", "Problem Solver"]; // Kata yang akan ditampilkan
+    const words = ["Freelancer", "Security and Networking", "Designer", "Problem Solver", "Web Developer"]; // Kata yang akan ditampilkan
     const typingSpeed = 100; // Kecepatan mengetik setiap huruf
     const deletingSpeed = 50; // Kecepatan menghapus setiap huruf
     const delayBetweenWords = 2000; // Delay antar pergantian kata
