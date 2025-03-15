@@ -194,10 +194,21 @@
                 <!-- Slide 1 -->
                 <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="./Picture/Project1.PNG" alt="Photo 1" class="w-full h-60 object-cover">
+                        <img src="./Picture/Project1.PNG" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
+                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+                            <div class="relative">
+                                <img id="modalImage" class="max-w-full max-h-screen">
+                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
+                            </div>
+                        </div>
                         <div class="p-4">
-                            <h4 class="text-xl font-bold mb-2">Bahan Ajar Materi Kerajaan Hindu Budha di Indonesia</h4>
-                            <p class="text-gray-600">This is a description for photo 1.</p>
+                            <h4 class="text-xl font-bold mb-2 text-center">
+                                Bahan Ajar Materi Kerajaan Hindu Budha di Indonesia berbasis web
+                            </h4>
+                            <hr class="border-t-2 border-gray-300 my-4">
+                            <p class="text-gray-600" style="text-align: justify;">
+                                Website dengan desain yang sederhana dan mudah untuk di pahami untuk pelajar, di buat menggunakan bahasa pemrograman HTML, Tailwind CSS, dan JavaScript.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -205,10 +216,87 @@
                 <!-- Slide 2 -->
                 <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="./Picture/Project2.PNG" alt="Photo 2" class="w-full h-60 object-cover">
+                        <img src="./Picture/Project2.PNG" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
+                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+                            <div class="relative">
+                                <img id="modalImage" class="max-w-full max-h-screen">
+                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
+                            </div>
+                        </div>
                         <div class="p-4">
-                            <h4 class="text-xl font-bold mb-2">Sistem pengarsipan surat masuk dan keluar Dinas PUPR Kabupaten Kuantan Singingi</h4>
-                            <p class="text-gray-600">This is a description for photo 2.</p>
+                            <h4 class="text-xl font-bold mb-2 text-center">
+                                Sistem pengarsipan surat masuk dan keluar di Dinas PUPR Kabupaten Kuantan Singingi
+                            </h4>
+                            <hr class="border-t-2 border-gray-300 my-4">
+                            <p class="text-gray-600" style="text-align: justify;">
+                                Sistem ini dibuat untuk mengarsip atau mencadangkan surat masuk dan keluar untuk memudahkan perkerjaan dan membuat sebuah arsip dokumen yang lebih tertata dan tidak memakan banyak ruang, di buat menggunakan bahasa pemrograman HTML, CSS, dan JavaScript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./Picture/ZONK!!.jpg" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
+                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+                            <div class="relative">
+                                <img id="modalImage" class="max-w-full max-h-screen">
+                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2 text-center">
+                                -----
+                            </h4>
+                            <hr class="border-t-2 border-gray-300 my-4">
+                            <p class="text-gray-600" style="text-align: justify;">
+                                -----
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./Picture/ZONK!!.jpg" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
+                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+                            <div class="relative">
+                                <img id="modalImage" class="max-w-full max-h-screen">
+                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2 text-center">
+                                -----
+                            </h4>
+                            <hr class="border-t-2 border-gray-300 my-4">
+                            <p class="text-gray-600" style="text-align: justify;">
+                                -----
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="./Picture/ZONK!!.jpg" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
+                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+                            <div class="relative">
+                                <img id="modalImage" class="max-w-full max-h-screen">
+                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2 text-center">
+                                -----
+                            </h4>
+                            <hr class="border-t-2 border-gray-300 my-4">
+                            <p class="text-gray-600" style="text-align: justify;">
+                                -----
+                            </p>
                         </div>
                     </div>
                 </div>

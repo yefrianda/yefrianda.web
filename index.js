@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const words = ["Freelancer", "Security and Networking", "Designer", "Problem Solver", "Web Developer"]; // Kata yang akan ditampilkan
+    const words = ["Freelancer", "Designer", "Problem Solver", "Web Developer"]; // Kata yang akan ditampilkan
     const typingSpeed = 100; // Kecepatan mengetik setiap huruf
     const deletingSpeed = 50; // Kecepatan menghapus setiap huruf
     const delayBetweenWords = 2000; // Delay antar pergantian kata
@@ -77,3 +77,13 @@ prevButton.addEventListener('click', () => {
 nextButton.addEventListener('click', () => {
     slider.scrollBy({ left: slider.clientWidth, behavior: 'smooth' });
 });
+
+// Gambar project yang bisa dilihat dengan view yang full
+function openModal(image) {
+    document.getElementById("modalImage").src = image.src;
+    document.getElementById("imageModal").classList.remove("hidden");
+}
+
+function closeModal() {
+    document.getElementById("imageModal").classList.add("hidden");
+}
