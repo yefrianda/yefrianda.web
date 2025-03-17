@@ -87,3 +87,4 @@ function openModal(image) {
 function closeModal() {
     document.getElementById("imageModal").classList.add("hidden");
 }
+

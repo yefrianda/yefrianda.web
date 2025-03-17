@@ -34,9 +34,10 @@
         <nav class="hidden md:flex space-x-4">
             <a href="#home" class="hover:text-teal-400">Home</a>
             <a href="#education" class="hover:text-teal-400">Education</a>
-            <a href="#techstack" class="hover:text-teal-400">TechStack</a>
+            <a href="#techstack" class="hover:text-teal-400">TechStack&CV</a>
             <a href="#project" class="hover:text-teal-400">Project</a>
-            <a href="#cv" class="hover:text-teal-400">CurriculumVitae</a>
+            <a href="#certificate" class="hover:text-teal-400">Certificate</a>
+            <!-- <a href="#cv" class="hover:text-teal-400">CurriculumVitae</a> -->
             <a href="#contact" class="hover:text-teal-400">Contact</a>
         </nav>
     </header>    
@@ -53,9 +54,10 @@
         <nav class="flex flex-col items-center justify-center h-screen space-y-6 text-white text-lg md:hidden">
             <a href="#home" class="hover:text-teal-400" onclick="toggleMobileMenu()">Home</a>
             <a href="#education" class="hover:text-teal-400" onclick="toggleMobileMenu()">Education</a>
-            <a href="#techstack" class="hover:text-teal-400" onclick="toggleMobileMenu()">Tech Stack</a>
+            <a href="#techstack" class="hover:text-teal-400" onclick="toggleMobileMenu()">Tech Stack & Curriculum Vitae</a>
             <a href="#project" class="hover:text-teal-400" onclick="toggleMobileMenu()">Project</a>
-            <a href="#cv" class="hover:text-teal-400" onclick="toggleMobileMenu()">Curriculum Vitae</a>
+            <a href="#certificate" class="hover:text-teal-400" onclick="toggleMobileMenu()">Certificate of Achievement</a>
+            <!-- <a href="#cv" class="hover:text-teal-400" onclick="toggleMobileMenu()">Curriculum Vitae</a> -->
             <a href="#contact" class="hover:text-teal-400" onclick="toggleMobileMenu()">Contact</a>
         </nav>
     </div>
@@ -117,7 +119,7 @@
                 <!-- Timeline Line -->
                 <div class="absolute left-6 top-0 h-full w-1 bg-teal-500"></div>
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 1 -->
                 <div class="flex items-start space-x-6 group">
                     <div class="relative z-10">
                         <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2020
@@ -127,13 +129,13 @@
                         class="bg-gray-50 p-6 rounded-lg shadow-lg flex-1 transform group-hover:-translate-y-2 transition duration-300">
                         <h3 class="font-bold text-xl mb-2">SMKN 2 Teluk Kuantan</h3>
                         <p class="text-gray-600">
-                            <strong>Temporary story</strong><br>
-                            Computer and Network Engineering
+                            <strong>Computer and Network Engineering</strong><br>
+                            Learning Basics: Networks, Network Devices, Servers, Hardware and Software, Troubleshooting, and Application Management
                         </p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 2 -->
                 <div class="flex items-start space-x-6 group">
                     <div class="relative z-10">
                         <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2024
@@ -144,14 +146,14 @@
                         <h3 class="font-bold text-xl mb-2">Islamic University of Riau</h3>
                         <p class="text-gray-600">
                             <p class="text-gray-600">
-                                <strong>Find your calling</strong><br>
-                                Informatics Engineering
+                                <strong>Informatics Engineering</strong><br>
+                                Thesis : Comparative Analysis of QOS (Quality of Sevices) in the Queue Tree, Simple Queue, PCQ, and HTB Methods Using Mikrotik Case Study : SMKN 2 Teluk Kuantan
                             </p>
                         </p>
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 3 -->
                 <div class="flex items-start space-x-6 group">
                     <div class="relative z-10">
                         <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2025
@@ -162,8 +164,9 @@
                         <h3 class="font-bold text-xl mb-2">Freelancer</h3>
                         <p class="text-gray-600">
                             <p class="text-gray-600">
-                                <strong>Sadistic current</strong><br>
-                                Need job vacancy information
+                                <strong> "Web Developer", "Designer", "Problem Solver"</strong><br>
+                                - UI/UX Design<br>
+                                - Front End Developer
                             </p>
                         </p>
                     </div>
@@ -172,29 +175,13 @@
         </div>
     </section>
 
-    <!-- Section Tech Stack -->
-    <!-- <section class="techstack bg-gray-200 py-20" id="techstack">
-        <h2 class="text-center text-3xl font-bold mb-8">Tech Stack</h2>
-    
-        <div class="container mx-auto flex justify-center items-center px-6">
-            <div 
-                class="bg-white shadow-lg rounded-lg relative w-full max-w-6xl">
-                <img 
-                    src="./Picture/TechStack.PNG" 
-                    alt="Tech Stack" 
-                    class="rounded-lg w-full h-auto object-cover">
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Section Tech Stack -->
+    <!-- Section TechStack -->
     <section class="techstack bg-gray-200 py-20" id="techstack">
-        <h2 class="text-center text-3xl font-bold mb-8">Tech Stack</h2>
-
-        <div class="container mx-auto flex justify-center items-center px-6">
+        <h2 class="text-center text-3xl font-bold mb-8">Tech Stack & CV</h2>
+    
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- TechStcak Icons -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-
-                <!-- Icons Tech Stack -->
                 <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
                     <img src="./Picture/Icons-HTML.png" alt="HTML" class="w-16 h-16 mb-4">
                     <p class="text-lg font-semibold">HTML</p>
@@ -227,17 +214,22 @@
                     <img src="./Picture/Icons-MySQL.png" alt="MySQL" class="w-16 h-16 mb-4">
                     <p class="text-lg font-semibold">MySQL</p>
                 </div>
-
+            </div>
+            
+            <!-- CV -->
+            <div class="flex justify-center">
+                <img src="./Picture/CV-YefriandaRayhan.jpg" alt="Tech Stack Preview" class="w-full max-w-md md:max-w-lg rounded-lg shadow-lg" onclick="openModal(this)">
             </div>
         </div>
     </section>
 
     <!-- Section Project -->
-    <section class="picture bg-white py-20" id="project">
+    <section class="project bg-white py-20" id="project">
         <h2 class="text-center text-3xl font-bold mb-8">Project</h2>
     
         <div class="container mx-auto relative">
             <div class="slider flex overflow-hidden gap-3 px-3" id="slider">
+                
                 <!-- Slide 1 -->
                 <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
@@ -354,16 +346,42 @@
         </div>
     </section>
     
-    <!-- Curriculum Vitae -->
-    <section class="techstack bg-gray-200 py-20" id="cv">
-        <h2 class="text-center text-3xl font-bold mb-8">Curriculum Vitae</h2>
-        <div class="container mx-auto flex justify-center items-center px-6">
-            <div class="w-full max-w-4xl">
-                <!-- Embed PDF file -->
-                <iframe src="CV Yefrianda Rayhan (full).pdf" class="w-full h-[600px] border rounded-lg shadow-lg"></iframe>
+    <!-- Section Certificate of Achievement -->
+    <section class="certificates bg-gray-200 py-20" id="certificate">
+        <h2 class="text-center text-3xl font-bold mb-8">Certificate of Achievement</h2>
+    
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Sertifikat 1 -->
+                <div class="flex justify-center">
+                    <img src="./Sertifikat/Toefl.PNG" alt="Sertifikat 1" class="w-66 h-auto cursor-pointer shadow-lg rounded-lg" onclick="openModal(this)">
+                </div>
+                <!-- Sertifikat 2 -->
+                <div class="flex justify-center">
+                    <img src="./Sertifikat/Asean CyberSecurity Skilling Programe.PNG" alt="Sertifikat 2" class="w-66 h-auto cursor-pointer shadow-lg rounded-lg" onclick="openModal(this)">
+                </div>
+                <!-- Sertifikat 3 -->
+                <div class="flex justify-center">
+                    <img src="./Sertifikat/Cisco Networking Academy - Enterprise Networking and Security.PNG" alt="Sertifikat 3" class="w-66 h-auto cursor-pointer shadow-lg rounded-lg" onclick="openModal(this)">
+                </div>
+                <!-- Sertifikat 4 -->
+                <div class="flex justify-center">
+                    <img src="./Sertifikat/CCNAv7 - Introduction To Network - Cisco Academy.PNG" alt="Sertifikat 4" class="w-66 h-auto cursor-pointer shadow-lg rounded-lg" onclick="openModal(this)">
+                </div>
             </div>
         </div>
     </section>
+    
+    
+    <!-- Curriculum Vitae -->
+    <!-- <section class="cv bg-gray-200 py-20" id="cv">
+        <h2 class="text-center text-3xl font-bold mb-8">Curriculum Vitae</h2>
+        <div class="container mx-auto flex justify-center items-center px-6">
+            <div class="w-full max-w-4xl">
+                <iframe src="CV Yefrianda Rayhan (full).pdf" class="w-full h-[600px] border rounded-lg shadow-lg"></iframe>
+            </div>
+        </div>
+    </section> -->
 
     <!-- Section Contact -->
     <section class="contact bg-gray-900 text-white py-20" id="contact">
