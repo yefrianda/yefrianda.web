@@ -34,7 +34,7 @@
         <nav class="hidden md:flex space-x-4">
             <a href="#home" class="hover:text-teal-400">Home</a>
             <a href="#education" class="hover:text-teal-400">Education</a>
-            <a href="#techstack" class="hover:text-teal-400">TechStack&CV</a>
+            <a href="#techstack&cv" class="hover:text-teal-400">TechStack&CV</a>
             <a href="#project" class="hover:text-teal-400">Project</a>
             <a href="#certificate" class="hover:text-teal-400">Certificate</a>
             <!-- <a href="#cv" class="hover:text-teal-400">CurriculumVitae</a> -->
@@ -54,7 +54,7 @@
         <nav class="flex flex-col items-center justify-center h-screen space-y-6 text-white text-lg md:hidden">
             <a href="#home" class="hover:text-teal-400" onclick="toggleMobileMenu()">Home</a>
             <a href="#education" class="hover:text-teal-400" onclick="toggleMobileMenu()">Education</a>
-            <a href="#techstack" class="hover:text-teal-400" onclick="toggleMobileMenu()">Tech Stack & Curriculum Vitae</a>
+            <a href="#techstack&cv" class="hover:text-teal-400" onclick="toggleMobileMenu()">Tech Stack & Curriculum Vitae</a>
             <a href="#project" class="hover:text-teal-400" onclick="toggleMobileMenu()">Project</a>
             <a href="#certificate" class="hover:text-teal-400" onclick="toggleMobileMenu()">Certificate of Achievement</a>
             <!-- <a href="#cv" class="hover:text-teal-400" onclick="toggleMobileMenu()">Curriculum Vitae</a> -->
@@ -130,7 +130,7 @@
                         <h3 class="font-bold text-xl mb-2">SMKN 2 Teluk Kuantan</h3>
                         <p class="text-gray-600" style="text-align: justify;">
                             <strong>Computer and Network Engineering</strong><br>
-                            Learning Basics: Networks, Network Devices, Servers, Hardware and Software, Troubleshooting, and Application Management
+                            Learning Basics : Networks, Network Devices, Servers, Hardware and Software, Troubleshooting, and Application Management
                         </p>
                     </div>
                 </div>
@@ -176,52 +176,83 @@
     </section>
 
     <!-- Section TechStack -->
-    <section class="techstack bg-gray-200 py-20" id="techstack">
-        <h2 class="text-center text-3xl font-bold mb-8">Tech Stack & CV</h2>
-    
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- TechStcak Icons -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
-                    <img src="./Picture/Icons-HTML.png" alt="HTML" class="w-16 h-16 mb-4">
-                    <p class="text-lg font-semibold">HTML</p>
+    <html lang="en">
+        <head>
+            <style>
+                .image-container img {width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: none;}
+                .image-container img.active {display: block;}
+                .btn {position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px; cursor: pointer;}
+                .btn-left {left: 10px;}
+                .btn-right {right: 10px;}
+            </style>
+        </head>
+        
+        <body class="bg-gray-200 py-20">
+            <section class="techstack&cv container mx-auto px-6" id="techstack&cv">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Title -->
+                    <h2 class="text-center md:col-span-2 text-3xl font-bold mb-8">Tech Stack & Curriculum Vitae</h2>
+        
+                    <!-- Tech Stack Icons -->
+                    <div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                            <div
+                                class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                                <img src="./Picture/Icons-HTML.png" alt="HTML" class="w-16 h-16 mb-4">
+                                <p class="text-lg font-semibold">HTML</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                                <img src="./Picture/Icons-CSS.png" alt="CSS" class="w-16 h-16 mb-4">
+                                <p class="text-lg font-semibold">CSS</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                                <img src="./Picture/Icons-TailwindCSS.png" alt="Tailwind CSS" class="w-16 h-16 mb-4">
+                                <p class="text-lg font-semibold">Tailwind CSS</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                                <img src="./Picture/Icons-JavaScript.png" alt="JavaScript" class="w-16 h-16 mb-4">
+                                <p class="text-lg font-semibold">JavaScript</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                                <img src="./Picture/Icons-NodeJS.png" alt="NodeJS" class="w-16 h-16 mb-4">
+                                <p class="text-lg font-semibold">NodeJS</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                                <img src="./Picture/Icons-PHP.png" alt="PHP" class="w-16 h-16 mb-4">
+                                <p class="text-lg font-semibold">PHP</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                                <img src="./Picture/Icons-Json.png" alt="Json" class="w-16 h-16 mb-4">
+                                <p class="text-lg font-semibold">Json</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
+                                <img src="./Picture/Icons-MySQL.png" alt="MySQL" class="w-16 h-16 mb-4">
+                                <p class="text-lg font-semibold">MySQL</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- CV -->
+                    <div class="relative w-full max-w-lg mx-auto text-center">
+                        <div class="image-container relative">
+                            <img src="./Picture/CV1.jpg" class="active" alt="CV 1">
+                            <img src="./Picture/CV2.PNG" alt="CV 2">
+                            <img src="./Picture/CV3.PNG" alt="CV 3">
+                        </div>
+                        <button class="btn btn-left" onclick="prevImage()">&#10094;</button>
+                        <button class="btn btn-right" onclick="nextImage()">&#10095;</button>
+                    </div>
                 </div>
-                <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
-                    <img src="./Picture/Icons-CSS.png" alt="CSS" class="w-16 h-16 mb-4">
-                    <p class="text-lg font-semibold">CSS</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
-                    <img src="./Picture/Icons-TailwindCSS.png" alt="Tailwind CSS" class="w-16 h-16 mb-4">
-                    <p class="text-lg font-semibold">Tailwind CSS</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
-                    <img src="./Picture/Icons-JavaScript.png" alt="JavaScript" class="w-16 h-16 mb-4">
-                    <p class="text-lg font-semibold">JavaScript</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
-                    <img src="./Picture/Icons-NodeJS.png" alt="NodeJS" class="w-16 h-16 mb-4">
-                    <p class="text-lg font-semibold">NodeJS</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
-                    <img src="./Picture/Icons-PHP.png" alt="PHP" class="w-16 h-16 mb-4">
-                    <p class="text-lg font-semibold">PHP</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
-                    <img src="./Picture/Icons-Json.png" alt="Json" class="w-16 h-16 mb-4">
-                    <p class="text-lg font-semibold">Json</p>
-                </div>
-                <div class="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition-transform">
-                    <img src="./Picture/Icons-MySQL.png" alt="MySQL" class="w-16 h-16 mb-4">
-                    <p class="text-lg font-semibold">MySQL</p>
-                </div>
-            </div>
-            
-            <!-- CV -->
-            <div class="flex justify-center">
-                <img src="./Picture/CV-YefriandaRayhan.jpg" alt="Tech Stack Preview" class="w-full max-w-md md:max-w-lg rounded-lg shadow-lg" onclick="openModal(this)">
-            </div>
-        </div>
-    </section>
+            </section>
+        </body>
+    </html>
 
     <!-- Section Project -->
     <section class="project bg-white py-20" id="project">
@@ -242,11 +273,11 @@
                         </div>
                         <div class="p-4">
                             <h4 class="text-xl font-bold mb-2 text-center">
-                                Bahan Ajar Materi Kerajaan Hindu Budha di Indonesia berbasis web
+                                Web-based teaching materials on Hindu-Buddhist Kingdoms in Indonesia
                             </h4>
                             <hr class="border-t-2 border-gray-300 my-4">
                             <p class="text-gray-600" style="text-align: justify;">
-                                Website dengan desain yang sederhana dan mudah untuk di pahami untuk pelajar, di buat menggunakan bahasa pemrograman HTML, Tailwind CSS, dan JavaScript.
+                                A website with a simple and easy-to-understand design for students, created using HTML, Tailwind CSS, and JavaScript programming languages.
                             </p>
                         </div>
                     </div>
@@ -264,11 +295,11 @@
                         </div>
                         <div class="p-4">
                             <h4 class="text-xl font-bold mb-2 text-center">
-                                Sistem pengarsipan surat masuk dan keluar di Dinas PUPR Kabupaten Kuantan Singingi
+                                Incoming and outgoing mail archiving system at the PUPR Service of Kuantan Singingi Regency
                             </h4>
                             <hr class="border-t-2 border-gray-300 my-4">
                             <p class="text-gray-600" style="text-align: justify;">
-                                Sistem ini dibuat untuk mengarsip atau mencadangkan surat masuk dan keluar untuk memudahkan perkerjaan dan membuat sebuah arsip dokumen yang lebih tertata dan tidak memakan banyak ruang, di buat menggunakan bahasa pemrograman HTML, CSS, dan JavaScript.
+                                This system is designed to archive or back up incoming and outgoing mail to make work easier and create a more organized document archive that does not take up much space, created using HTML, CSS, and JavaScript programming languages.
                             </p>
                         </div>
                     </div>

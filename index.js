@@ -78,6 +78,27 @@ nextButton.addEventListener('click', () => {
     slider.scrollBy({ left: slider.clientWidth, behavior: 'smooth' });
 });
 
+// Fungsi next untuk CV
+let currentIndex = 0;
+                    const images = document.querySelectorAll('.image-container img');
+                    
+                    function showImage(index) {
+                        images.forEach((img, i) => {
+                            img.classList.toggle('active', i === index);
+                        });
+                    }
+                    
+                    function prevImage() {
+                        currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        showImage(currentIndex);
+                    }
+                    
+                    function nextImage() {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        showImage(currentIndex);
+                    }
+
+                    
 // Gambar project yang bisa dilihat dengan view yang full
 function openModal(image) {
     document.getElementById("modalImage").src = image.src;
