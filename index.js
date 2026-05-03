@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const words = ["Freelancer", "Designer", "Problem Solver", "Web Developer"]; // Kata yang akan ditampilkan
+    const words = ["UI/UX Designer", "Network Engineer", "IT Support", "Designer", "Web Developer", "Back-End Developer"]; // Kata yang akan ditampilkan
     const typingSpeed = 100; // Kecepatan mengetik setiap huruf
     const deletingSpeed = 50; // Kecepatan menghapus setiap huruf
     const delayBetweenWords = 2000; // Delay antar pergantian kata
@@ -101,11 +101,18 @@ let currentIndex = 0;
                     
 // Gambar project yang bisa dilihat dengan view yang full
 function openModal(image) {
-    document.getElementById("modalImage").src = image.src;
-    document.getElementById("imageModal").classList.remove("hidden");
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    modalImg.src = image.src;
 }
 
 function closeModal() {
-    document.getElementById("imageModal").classList.add("hidden");
-}
+    const modal = document.getElementById("imageModal");
 
+    modal.classList.remove("flex");
+    modal.classList.add("hidden");
+}

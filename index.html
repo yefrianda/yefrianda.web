@@ -122,7 +122,7 @@
                 <!-- Timeline Item 1 -->
                 <div class="flex items-start space-x-6 group">
                     <div class="relative z-10">
-                        <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2020
+                        <div class="min-w-[90px] px-3 py-2 bg-teal-500 text-white flex items-center justify-center rounded-full whitespace-nowrap text-sm">2017-2020
                         </div>
                     </div>
                     <div
@@ -138,7 +138,7 @@
                 <!-- Timeline Item 2 -->
                 <div class="flex items-start space-x-6 group">
                     <div class="relative z-10">
-                        <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2024
+                        <div class="min-w-[90px] px-3 py-2 bg-teal-500 text-white flex items-center justify-center rounded-full whitespace-nowrap text-sm">2020-2024
                         </div>
                     </div>
                     <div
@@ -156,7 +156,7 @@
                 <!-- Timeline Item 3 -->
                 <div class="flex items-start space-x-6 group">
                     <div class="relative z-10">
-                        <div class="h-12 w-12 bg-teal-500 text-white flex items-center justify-center rounded-full">2025
+                        <div class="min-w-[90px] px-3 py-2 bg-teal-500 text-white flex items-center justify-center rounded-full whitespace-nowrap text-sm">2025
                         </div>
                     </div>
                     <div
@@ -164,9 +164,12 @@
                         <h3 class="font-bold text-xl mb-2">Freelancer</h3>
                         <p class="text-gray-600">
                             <p class="text-gray-600">
-                                <strong> "Web Developer", "Designer", "Problem Solver"</strong><br>
-                                - UI/UX Design<br>
-                                - Front End Developer
+                                <strong>Delivering Modern Web Solutions, UI/UX Design, IT Support, and Network Engineering Services</strong><br>
+                                - UI/UX Designer<br>
+                                - IT Support<br>
+                                - Designer<br>
+                                - Back-End Developer<br>
+                                - Network Engineer
                             </p>
                         </p>
                     </div>
@@ -254,127 +257,87 @@
         </body>
     </html>
 
-    <!-- Section Project -->
+    <!-- SECTION PROJECT -->
     <section class="project bg-white py-20" id="project">
-        <h2 class="text-center text-3xl font-bold mb-8">Project</h2>
-    
-        <div class="container mx-auto relative">
-            <div class="slider flex overflow-hidden gap-3 px-3" id="slider">
-                
-                <!-- Slide 1 -->
-                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="./Picture/Project1.PNG" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
-                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
-                            <div class="relative">
-                                <img id="modalImage" class="max-w-full max-h-screen">
-                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="text-xl font-bold mb-2 text-center">
+        <h2 class="text-center text-3xl font-bold mb-10">Project</h2>
+        <!-- CONTAINER -->
+        <div class="container mx-auto px-4">
+            <!-- GRID (RESPONSIVE & CENTER) -->
+            <div class="flex flex-wrap justify-center items-stretch gap-6">
+                <!-- CARD 1 -->
+                <div class="w-full sm:w-[48%] lg:w-[30%]">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+                        <img src="./Picture/Project1.PNG"
+                            class="w-full h-64 object-cover cursor-pointer"
+                            onclick="openModal(this)">
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="text-lg font-bold text-center mb-2">
                                 Web-based teaching materials on Hindu-Buddhist Kingdoms in Indonesia
                             </h4>
-                            <hr class="border-t-2 border-gray-300 my-4">
-                            <p class="text-gray-600" style="text-align: justify;">
-                                A website with a simple and easy-to-understand design for students, created using HTML, Tailwind CSS, and JavaScript programming languages.
+                            <hr class="my-3">
+                            <p class="text-gray-600 text-justify flex-grow">
+                                A website with a simple and easy-to-understand design for students,
+                                created using HTML, Tailwind CSS, and JavaScript.
                             </p>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Slide 2 -->
-                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="./Picture/Project2.PNG" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
-                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
-                            <div class="relative">
-                                <img id="modalImage" class="max-w-full max-h-screen">
-                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="text-xl font-bold mb-2 text-center">
-                                Incoming and outgoing mail archiving system at the PUPR Service of Kuantan Singingi Regency
+                <!-- CARD 2 -->
+                <div class="w-full sm:w-[48%] lg:w-[30%]">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+                        <img src="./Picture/Project2.PNG"
+                            class="w-full h-64 object-cover cursor-pointer"
+                            onclick="openModal(this)">
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="text-lg font-bold text-center mb-2">
+                                Mail Archiving System at PUPR Kuantan Singingi
                             </h4>
-                            <hr class="border-t-2 border-gray-300 my-4">
-                            <p class="text-gray-600" style="text-align: justify;">
-                                This system is designed to archive or back up incoming and outgoing mail to make work easier and create a more organized document archive that does not take up much space, created using HTML, CSS, and JavaScript programming languages.
+                            <hr class="my-3">
+                            <p class="text-gray-600 text-justify flex-grow">
+                                A system designed to manage incoming and outgoing mail efficiently,
+                                making document storage more organized and space-saving.
                             </p>
                         </div>
                     </div>
                 </div>
+                <!-- CARD 3 -->
+                <div class="w-full sm:w-[48%] lg:w-[30%]">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
+                        <img src="./Picture/Project3.jpg"
+                            class="w-full h-64 object-cover cursor-pointer"
+                            onclick="openModal(this)">
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="text-lg font-bold text-center mb-2">
+                                QoS Analysis Using Mikrotik
+                            </h4>
+                            <hr class="my-3">
+                            <p class="text-gray-600 text-justify flex-grow">
+                                Research comparing Queue Tree, Simple Queue, PCQ, and HTB methods
+                                to ensure fair bandwidth distribution across network devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL -->
+        <div id="imageModal"
+            class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+            <div class="relative">
+                <img id="modalImage" class="max-w-full max-h-screen rounded-lg">
+                <button onclick="closeModal()"
+                    class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full font-bold">
+                    X
+                </button>
+            </div>
+        </div>
 
-                <!-- Slide 3 -->
-                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="./Picture/ZONK!!.jpg" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
-                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
-                            <div class="relative">
-                                <img id="modalImage" class="max-w-full max-h-screen">
-                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="text-xl font-bold mb-2 text-center">
-                                -----
-                            </h4>
-                            <hr class="border-t-2 border-gray-300 my-4">
-                            <p class="text-gray-600" style="text-align: justify;">
-                                -----
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="./Picture/ZONK!!.jpg" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
-                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
-                            <div class="relative">
-                                <img id="modalImage" class="max-w-full max-h-screen">
-                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="text-xl font-bold mb-2 text-center">
-                                -----
-                            </h4>
-                            <hr class="border-t-2 border-gray-300 my-4">
-                            <p class="text-gray-600" style="text-align: justify;">
-                                -----
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 5 -->
-                <div class="slide flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4">
-                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                        <img src="./Picture/ZONK!!.jpg" alt="Photo 1" class="w-full h-70 object-cover cursor-pointer" onclick="openModal(this)">
-                        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
-                            <div class="relative">
-                                <img id="modalImage" class="max-w-full max-h-screen">
-                                <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full text-lg font-bold">X</button>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="text-xl font-bold mb-2 text-center">
-                                -----
-                            </h4>
-                            <hr class="border-t-2 border-gray-300 my-4">
-                            <p class="text-gray-600" style="text-align: justify;">
-                                -----
-                            </p>
-                        </div>
-                    </div>
-                </div>
-    
-            <!-- Navigation buttons -->
+    <!-- </section>
             <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md hover:bg-gray-900">&#8592;</button>
             <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md hover:bg-gray-900">&#8594;</button>
         </div>
+    </section>-->
+    
     </section>
     
     <!-- Section Certificate of Achievement -->
