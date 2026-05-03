@@ -1,0 +1,118 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const words = ["UI/UX Designer", "Network Engineer", "IT Support", "Designer", "Web Developer", "Back-End Developer"]; // Kata yang akan ditampilkan
+    const typingSpeed = 100; // Kecepatan mengetik setiap huruf
+    const deletingSpeed = 50; // Kecepatan menghapus setiap huruf
+    const delayBetweenWords = 2000; // Delay antar pergantian kata
+    let indexWord = 0; // Indeks kata saat ini
+    let indexChar = 0; // Indeks karakter dalam kata
+    let isDeleting = false; // Status untuk memeriksa apakah sedang menghapus atau mengetik
+    const element = document.getElementById("typewriter");
+
+    function typeEffect() {
+        const currentWord = words[indexWord];
+
+        if (isDeleting) {
+            // Menghapus karakter
+            element.innerText = currentWord.substring(0, indexChar - 1);
+            indexChar -= 1;
+        } else {
+            // Menulis karakter
+            element.innerText = currentWord.substring(0, indexChar + 1);
+            indexChar += 1;
+        }
+
+        // Jika semua huruf selesai diketik, tunggu sebelum mulai menghapus
+        if (!isDeleting && indexChar === currentWord.length) {
+            setTimeout(() => {
+                isDeleting = true; // Mulai menghapus
+                typeEffect();
+            }, delayBetweenWords);
+        } else if (isDeleting && indexChar === 0) {
+            // Jika selesai menghapus, pindah ke kata berikutnya
+            isDeleting = false; // Berhenti menghapus
+            indexWord = (indexWord + 1) % words.length; // Pergi ke kata berikutnya
+            setTimeout(() => typeEffect(), typingSpeed);
+        } else {
+            // Tetap lanjutkan proses dengan kecepatan yang sesuai
+            setTimeout(() => typeEffect(), isDeleting ? deletingSpeed : typingSpeed);
+        }
+    }
+
+    // Jalankan fungsi ketik
+    typeEffect();
+});
+
+const hamburgerIcon = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeMenu = document.getElementById("closeMenu");
+
+// Toggle menu (open/close)
+function toggleMobileMenu() {
+    if (mobileMenu.classList.contains("-translate-x-full")) {
+        mobileMenu.classList.remove("-translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+    } else {
+        mobileMenu.classList.remove("translate-x-0");
+        mobileMenu.classList.add("-translate-x-full");
+    }
+}
+
+// Aktifkan hamburger menu saat diklik
+hamburgerIcon.addEventListener("click", toggleMobileMenu);
+
+// Aktifkan tombol close (X) untuk menutup menu
+closeMenu.addEventListener("click", toggleMobileMenu);
+
+// Section Picture
+const slider = document.getElementById('slider');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+    
+let scrollAmount = 0;
+    
+prevButton.addEventListener('click', () => {
+    slider.scrollBy({ left: -slider.clientWidth, behavior: 'smooth' });
+});
+    
+nextButton.addEventListener('click', () => {
+    slider.scrollBy({ left: slider.clientWidth, behavior: 'smooth' });
+});
+
+// Fungsi next untuk CV
+let currentIndex = 0;
+                    const images = document.querySelectorAll('.image-container img');
+                    
+                    function showImage(index) {
+                        images.forEach((img, i) => {
+                            img.classList.toggle('active', i === index);
+                        });
+                    }
+                    
+                    function prevImage() {
+                        currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        showImage(currentIndex);
+                    }
+                    
+                    function nextImage() {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        showImage(currentIndex);
+                    }
+
+                    
+// Gambar project yang bisa dilihat dengan view yang full
+function openModal(image) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    modalImg.src = image.src;
+}
+
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+
+    modal.classList.remove("flex");
+    modal.classList.add("hidden");
+}
